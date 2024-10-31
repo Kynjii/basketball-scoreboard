@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Cursed;
+    src: url(/CursedTimerUlil-Aznm.ttf);
+    }
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#home-el {
+        font-family: Cursed;
+        font-size: xx-large;
+        color: #F94F6D;
+}
+
+#guest-el {
+        font-family: Cursed;
+        font-size: xx-large;
+        color: #F94F6D;
+}
+
+.score-button {
+    background-color: black;
+    color: whitesmoke;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.leader {
+    color: gold;
+}
+
+.draw {
+    color: darkblue;
+}
