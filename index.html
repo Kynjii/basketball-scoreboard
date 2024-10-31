@@ -1,25 +1,30 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Happy+Monkey&family=Orbitron:wght@400..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <div>
+            <div class="home-title">
                 <h3>HOME</h3>
-                <div id="home-el">0</div>
+                <div id="home-el" class="default-score">0</div>
                 <button class="score-button" onclick="homeAdd1()">+1</button>
                 <button class="score-button" onclick="homeAdd2()">+2</button>
                 <button class="score-button" onclick="homeAdd3()">+3</button>
             </div>
-            <div>
+            <div class="guest-title">
                 <h3>GUEST</h3>
-                <div id="guest-el" class="">0</div>
+                <div id="guest-el" class="default-score">0</div>
                 <button class="score-button" onclick="guestAdd1()">+1</button>
                 <button class="score-button" onclick="guestAdd2()">+2</button>
                 <button class="score-button" onclick="guestAdd3()">+3</button>
             </div>
         </div>
-        <button id="reset-btn" onclick="resetScore()">NEW GAME</button>
+        <div class="reset-btn">
+            <button id="reset-btn" onclick="resetScore()">NEW GAME</button>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

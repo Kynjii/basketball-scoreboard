@@ -11,18 +11,18 @@ var guestScore = document.getElementById("guest-el")
 function updateLeaderHighlight() {
         if (homeScoreCount > guestScoreCount) {
             homeScore.setAttribute("class", "leader");
-            guestScore.removeAttribute("class", "leader");
+            guestScore.setAttribute("class", "default-score");
         } 
         else if (guestScoreCount > homeScoreCount) {
             guestScore.setAttribute("class", "leader");
-            homeScore.removeAttribute("class", "leader");
+            homeScore.setAttribute("class", "default-score");
         }
         else if (guestScoreCount === homeScoreCount && homeScoreCount > 0) {
             guestScore.setAttribute("class", "draw");
             homeScore.setAttribute("class", "draw");
         } else {
-            homeScore.removeAttribute("class", "leader");
-            guestScore.removeAttribute("class", "leader");
+            homeScore.setAttribute("class", "default-score");
+            guestScore.setAttribute("class", "default-score");
         }
     }   
 
